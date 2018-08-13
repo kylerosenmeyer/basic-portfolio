@@ -3,13 +3,13 @@
 nav {
     position: sticky;
     top: 0;
-    width: 100%;
-    height: 115px;
+    /* width: 100%; */
+    /* height: 115px; */
     background-color: #ffffff;
-    color: #cccccc;
-    border: 0px;
-    margin: 0px;
-    z-index: -1;
+    /* color: #cccccc; */
+    /* border: 0px; */
+    /* margin: 0px; */
+    z-index: 1;
 }
 
 nav header {
@@ -33,22 +33,19 @@ nav ul {
     overflow: hidden;
 }
 
-nav li a {
-    border-right: 2px solid #cccccc;
+li a {
     float: right;
-    left: 500px;
-    top: 0px;
     z-index: 2;
-    padding: 50px 10px 50px 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 40px 0px 40px 0px;
 }
 
-nav li a:last-child {
+li {
+    border-right: 2px solid #777777;
+}
+
+li:last-child {
     border-right: none;
-}
-
-nav li a:hover {
-    background-color: #777777;
-    color: #ffffff;
 }
 
 body {
@@ -58,19 +55,24 @@ body {
 
 /* Link Styling */
 
-nav a:link {
+a:link {
     color: #cccccc;
     text-decoration: none;
 }
 
-nav a:active {
+a:active {
     color: #4aaaa5;
     text-decoration: none;
 }
 
-nav a:visited {
+a:visited {
     background-color: #ffffff;
     color: #cccccc;
+}
+
+a:hover {
+    background-color: #777777;
+    color: #ffffff;
 }
 
 /* Class Styling */
@@ -80,6 +82,7 @@ nav a:visited {
     bottom: 0px;
     width: 100%;
     background-color: #666666;
+    color: #ffffff
 }
 
 .main {
@@ -92,9 +95,13 @@ nav a:visited {
     width: 960px;
     padding: 50px;
     margin: 50px;
+    z-index: 0;
 }
 
-
+#image-gallery {
+    align-items: center;
+    padding: 20px;
+}
 
 .gray-border {
     background-color: #cccccc;
@@ -134,6 +141,7 @@ p {
     width: 100%;
     position: fixed;
     top: 115px;
+    z-index: 1;
 }
 
 #teal-border-bottom {
@@ -143,6 +151,6 @@ p {
 }
 
 #space {
-    width:200px;
+    width:210px;
     font-size: 0px;
 }
