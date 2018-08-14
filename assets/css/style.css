@@ -53,6 +53,38 @@ body {
     margin:0px;
 }
 
+input {
+    width: 33%;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 35%;
+    font-size: 20px;
+}
+    
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #4aaaa5;
+}
+
+textarea {
+    resize: none;
+    width: 33%;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    height: 50px;
+}
+
 /* Link Styling */
 
 a:link {
@@ -96,11 +128,6 @@ a:hover {
     padding: 50px;
     margin: 50px;
     z-index: 0;
-}
-
-#image-gallery {
-    align-items: center;
-    padding: 20px;
 }
 
 .gray-border {
@@ -153,4 +180,9 @@ p {
 #space {
     width:210px;
     font-size: 0px;
+}
+
+#image-gallery {
+    align-items: center;
+    padding: 20px;
 }
