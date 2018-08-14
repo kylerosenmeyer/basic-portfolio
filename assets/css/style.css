@@ -54,7 +54,7 @@ body {
 }
 
 input {
-    width: 33%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0px 10px 0px;
     border-radius: 5px;
@@ -63,7 +63,7 @@ input {
 input[type=submit] {
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 35%;
+    width: 25%;
     font-size: 20px;
 }
     
@@ -74,7 +74,7 @@ input[type=submit]:hover {
 
 textarea {
     resize: none;
-    width: 33%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0px 10px 0px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ textarea {
     border-style: inset;
     border-color: initial;
     border-image: initial;
-    height: 50px;
+    height: 100px;
 }
 
 /* Link Styling */
@@ -136,6 +136,33 @@ a:hover {
     width: 100%;
 }
 
+div.gallery {
+    margin: 25px 5px 0px 5px;
+    /* float: left; */
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin: none;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: none;
+    position: relative;
+    top: 0px;
+    z-index: 3;
+    border-bottom: 2px solid #ffffff;
+
+}
 
 /* Font Styling */
 
@@ -180,9 +207,4 @@ p {
 #space {
     width:210px;
     font-size: 0px;
-}
-
-#image-gallery {
-    align-items: center;
-    padding: 20px;
 }
